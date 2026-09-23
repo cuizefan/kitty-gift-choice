@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>国庆礼物选择</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="home">
+    <div class="page-shell">
+      <div class="ribbon ribbon-1"></div>
+      <div class="ribbon ribbon-2"></div>
+      <div class="ribbon ribbon-3"></div>
+      <div class="ribbon ribbon-4"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+
+      <main class="scene">
+        <section id="cover-screen" class="screen active">
+          <div class="cover-card">
+            <div class="kitty-figure" aria-label="Hello Kitty illustration">
+              <div class="ear left"></div>
+              <div class="ear right"></div>
+              <div class="head">
+                <div class="face">
+                  <div class="eye left"></div>
+                  <div class="eye right"></div>
+                  <div class="nose"></div>
+                  <div class="mouth"></div>
+                  <div class="whiskers left">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="whiskers right">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="bow">
+                    <span class="bow-center"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="body"></div>
+              <div class="arm left"></div>
+              <div class="arm right"></div>
+              <div class="foot left"></div>
+              <div class="foot right"></div>
+            </div>
+
+            <div class="question-box">你想要国庆礼物吗</div>
+
+            <div class="choice-row">
+              <button class="choice choice-affirm" type="button">想要</button>
+              <button class="choice choice-deny" type="button">不想要</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="gift-screen" class="screen">
+          <div class="gift-card">
+            <div class="gift-header">
+              <span class="mini-badge">精选礼物</span>
+              <h2>挑一个心动的国庆礼物</h2>
+            </div>
+
+            <div class="product-grid">
+              <button class="gift-item" type="button" data-name="兰蔻小黑瓶">
+                <div class="product-visual bottle">
+                  <div class="bottle-cap"></div>
+                  <div class="bottle-body"></div>
+                </div>
+                <span>兰蔻小黑瓶</span>
+              </button>
+
+              <button class="gift-item" type="button" data-name="Hello Kitty 保温杯">
+                <div class="product-visual thermos">
+                  <div class="thermos-top"></div>
+                  <div class="thermos-body">
+                    <div class="thermos-kitty"></div>
+                  </div>
+                </div>
+                <span>Hello Kitty 保温杯</span>
+              </button>
+
+              <button class="gift-item" type="button" data-name="Jellycat 邦妮兔">
+                <div class="product-visual bunny">
+                  <div class="bunny-ear left"></div>
+                  <div class="bunny-ear right"></div>
+                  <div class="bunny-face">
+                    <span class="eye left"></span>
+                    <span class="eye right"></span>
+                    <span class="nose"></span>
+                  </div>
+                </div>
+                <span>Jellycat 邦妮兔</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="letter-screen" class="screen">
+          <div class="letter-paper">
+            <div class="letter-top"></div>
+            <div class="letter-content">
+              <p class="letter-salute">收到！</p>
+              <p class="letter-text">请确认你的 <span id="selected-gift-name">礼物</span> 礼物</p>
+            </div>
+            <div class="letter-actions">
+              <button class="letter-btn confirm" type="button">确认</button>
+              <button class="letter-btn back" type="button">重新挑选</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
